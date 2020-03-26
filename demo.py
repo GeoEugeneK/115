@@ -1,3 +1,3 @@
 import os
 
-print(f"Hi, that's from {os.path.abs(__file__)}")
+print(f"Hi, that's from {os.path.abspath(__file__)}")
