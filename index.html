@@ -19,7 +19,11 @@
 var map = new mapboxgl.Map(
 	{
 		container: 'map',
-		style: 'mapbox://styles/mapbox/streets-v9'
+		center: [27.56633, 53.90385],
+		style: 'mapbox://styles/eugenekali/ck8859g3106gx1iobjn3g57ju'
 	}
 );
+	
+map.addControl(new mapboxgl.NavigationControl());
+
 </script>
