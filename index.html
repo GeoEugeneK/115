@@ -28,6 +28,26 @@ var map = new mapboxgl.Map(
 	}
 );
 	
+map.on('load', 
+       {
+		map.setPaintProperty("pts-azyu2q", "circle-color", [
+                    "interpolate",
+                    ["linear"],
+                    ["get", "r"],
+                    3.254499912261963,
+                    "hsl(0, 93%, 23%)",
+                    3.55,
+                    "hsl(28, 91%, 57%)",
+                    3.85,
+                    "hsl(50, 100%, 68%)",
+                    4.18,
+                    "hsl(69, 100%, 47%)",
+                    4.5,
+                    "hsl(89, 100%, 28%)"
+                ]);
+	}
+)
+	
 map.addControl(new mapboxgl.NavigationControl());
 
 </script>
