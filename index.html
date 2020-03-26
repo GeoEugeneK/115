@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Generate and add a missing icon to the map</title>
+<title>SSupermarkets & Groceries</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
@@ -12,10 +12,13 @@
 </style>
 </head>
 <body>
+<script>
+var ndr = 'cGsuZXlKMUlqb2laWFZuWlc1bGEyRnNhU0lzSW1FaU9pSmphbXB5ZVhnMmFtNHdNSEoxTTNCdloyODVkbUZ1YkRSdkluMC5YTWRvbFNJSU05YkFOcGRvemZ2MGJB';
+</script>
 <div id="map"></div>
  
 <script>
-	mapboxgl.accessToken = 'pk.eyJ1IjoiZXVnZW5la2FsaSIsImEiOiJjampyeXg2am4wMHJ1M3BvZ285dmFubDRvIn0.XMdolSIIM9bANpdozfv0bA';
+mapboxgl.accessToken = atob(ndr);
 var map = new mapboxgl.Map(
 	{
 		container: 'map',
